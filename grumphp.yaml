@@ -1,0 +1,6 @@
+grumphp:
+    tasks:
+        mago_format: ~
+        mago_lint: ~
+        mago_analyze: ~
+        phpunit: ~

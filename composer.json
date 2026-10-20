@@ -1,0 +1,41 @@
+{
+	"name": "femiwiki/http-signatures",
+	"description": "Sign and verify HTTP signatures as ActivityPub servers use them",
+	"keywords": ["activitypub", "http-signatures", "fediverse"],
+	"homepage": "https://github.com/femiwiki/http-signatures",
+	"license": "Apache-2.0",
+	"authors": [
+		{
+			"name": "Femiwiki Team"
+		}
+	],
+	"require": {
+		"php": ">=8.2",
+		"ext-openssl": "*"
+	},
+	"require-dev": {
+		"carthage-software/mago": "1.58.2",
+		"phpro/grumphp": "2.26.0",
+		"phpunit/phpunit": "11.5.57"
+	},
+	"autoload": {
+		"psr-4": {
+			"Femiwiki\\HttpSignatures\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Femiwiki\\HttpSignatures\\Tests\\": "tests/"
+		}
+	},
+	"scripts": {
+		"fix": "mago fmt",
+		"test": "grumphp run --no-interaction"
+	},
+	"config": {
+		"allow-plugins": {
+			"phpro/grumphp": true
+		},
+		"sort-packages": true
+	}
+}
